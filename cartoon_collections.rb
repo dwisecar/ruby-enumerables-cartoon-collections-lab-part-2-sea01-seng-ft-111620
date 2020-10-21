@@ -23,8 +23,5 @@ def find_valid_calls(planeteer_calls)
   found_call = ""
   found_call = planeteer_calls.find {|element| element == valid_calls}
   
-  if found_call == ""
-    found_call = nil
-  end
   found_call
 end
