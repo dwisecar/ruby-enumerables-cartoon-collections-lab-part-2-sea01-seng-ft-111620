@@ -24,7 +24,10 @@ def find_valid_calls(planeteer_calls)
   found_call = ""
   
   planeteer_calls.each do |element|
-    found_call = valid_calls.find {|i| i == element}
+    if found_call != ""
+      found_call = valid_calls.find {|i| i == element}
+    end
+    
   end
   found_call
   
